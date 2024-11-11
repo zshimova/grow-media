@@ -37,8 +37,8 @@ form.addEventListener('submit', async (event) => {
     let inputPhone = document.querySelector('#phone');    
     let phoneValue = inputPhone.value;
     let phoneError = document.querySelector('#phone-error');    
-    if (phoneValue === "") {
-        phoneError.textContent = "Введите номер телефона";        
+    if (phoneValue === "" || phoneValue.length < 18) {
+        phoneError.textContent = "Введите корректный номер телефона";        
         isValid = false;   
     } else {
         phoneError.textContent = "";        
