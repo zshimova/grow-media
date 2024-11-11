@@ -1,0 +1,123 @@
+
+body {
+    font-family: 'Andalé Mono', monospace;
+    font-size: 14px;
+}
+
+h3 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+input:focus,
+select:focus {
+    outline-color: #5361f0;
+}
+
+.main {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.form {
+    position: relative;
+}
+
+.error {
+    color: red;    
+    font-size: 10px;
+}
+
+.form,
+#select-industry option {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 20px;
+}
+
+.main__private-info {
+    margin-bottom: 40px;
+}
+
+.main__info-block {
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.main__business-info {
+    margin-bottom: 28px;
+}
+
+.main__checkbox {
+    margin: 35px 0 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+#send-button {
+    position: absolute;
+    padding: 8px;
+    width: auto;
+    right: 0;
+    color: #fff;
+    background-color: #5361f0;
+    border: none;
+    border-radius: 28px;
+    transition: background-color 0.4s ease;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #444eba;
+}
+
+#send-button:active {
+    background-color: #6471ff;
+}
+
+#success {
+    display: none;
+}
+
+#success.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 10; 
+}
+
+#success p {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #5361f0;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 18px;
+}
