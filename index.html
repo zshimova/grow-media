@@ -13,23 +13,25 @@
                 <h3>Личная информация</h3>
                 <div class="main__info-block">
                     <span>Имя</span>
-                    <input type="text" name="name" id="name" autocomplete="name" required>
+                    <input type="text" name="name" id="name" autocomplete="name">
+                    <span class="error" id="name-error"></span>
                 </div>
                 <div class="main__info-block">
                     <span>Email</span>
-                    <input type="email" name="email" id="email" autocomplete="email" required>
+                    <input type="email" name="email" id="email" autocomplete="email" >
                     <span class="error" id="email-error"></span>
                 </div>
                 <div class="main__info-block">
                     <span>Телефон</span>
-                    <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+                    <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+                    <span class="error" id="phone-error"></span>
                 </div>
             </div>
             <div class="main__business-info">
                 <h3>Информация о бизнесе</h3>
                 <div class="main__info-block">
                     <span>Ожидаемый оборот</span>
-                    <input type="number" name="expectations" id="expectations" step="0.000001" required>
+                    <input type="number" name="expectations" id="expectations" step="any">
                     <span class="error" id="expect-error"></span>
                 </div>
                 <div class="main__info-block">
@@ -40,7 +42,7 @@
                         <option value="indutry-three">Индустрия 3</option>
                     </select>
                     <div class="main__checkbox">
-                        <input type="checkbox" id="checkbox" required>
+                        <input type="checkbox" id="checkbox" checked required>
                         <label for="checkbox" class="main__checkbox_label"><span>Я принимаю правила сервиса</span></label>
                     </div>
                 </div>
